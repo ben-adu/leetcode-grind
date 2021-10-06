@@ -5,7 +5,6 @@ class Solution {
     public int distributeCandies(int[] candyType)
     {
         int[] unique=IntStream.of(candyType).distinct().toArray();
-        //System.out.println(Arrays.toString(unique));
-        return Math.min(unique.length, unique.length/2);
+        return Math.min(unique.length, candyType.length/2);
     }
 }
